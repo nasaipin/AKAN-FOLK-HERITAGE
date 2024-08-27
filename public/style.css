@@ -1,0 +1,329 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-weight: normal;
+ 
+}
+/* the easy tutorias */
+nav {
+    display: flex;
+    padding: 0% 6%;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #f44336;
+ }
+ nav img {
+    width: 20%;
+    border-radius: 10px;
+ }
+ .nav-link {
+    flex: 1;
+    text-align: center;
+ }
+ .nav-link ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+   
+    margin-bottom: 40px;
+ 
+ }
+ .nav-link ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    /* font-size: 100%; */
+ }
+
+ 
+ @media (max-width:768px) {
+    .nav-link ul li a {
+        font-size: ;
+    }   
+}
+ .nav-link ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+ }
+ .nav-link ul li:hover::after {
+    width: 100%;
+ }
+/*  */
+.sts_videos {
+    background-color: wheat;
+    /* padding: 2rem; */
+     /* background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(cul_images/background.jpg); */
+    background-position: center;
+    background-size: cover;
+ 
+}
+h1 {
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+   
+    font-size: 36PX;
+    font-weight: 600;
+}
+
+.containter {
+     display: grid; 
+     grid-template-columns: 2fr 1fr; 
+    gap: 15px;
+    align-items: flex-start;
+    padding: 0px 3rem;
+    width: auto;
+    max-width: 100%;
+    /* padding: 3rem; */
+}
+.containter .main-video {
+    /* border-radius: 60px; */
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    
+ 
+}
+/* .containter .main-video video {
+    width: 95%;
+    border-radius: 20px;
+} */
+.containter .main-video .title {
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+.containter .video-listed {
+    border-radius: 5px;
+    height: 520px;
+    overflow-y: scroll;
+
+}
+.containter .video-listed ::-webkit-scrollbar {
+    width: 7px;
+}
+.containter .video-listed ::-webkit-scrollbar-track {
+    /* background: red; */
+    border-radius: 50px;
+}
+.containter .video-listed ::-webkit-scrollbar-thumb {
+    /* background: red; */
+    border-radius: 50px;
+}
+.containter .video-listed .vid video {
+    width: 100px;
+    border-radius: 5px;
+
+}
+.containter .video-listed .vid {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* background: #f7f7f7; */
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(248, 196, 196);
+    /* color: white; */
+    border:1px solid #ff4c68;
+    cursor: pointer;
+}
+.containter .video-listed .vid :hover {
+    background: #eee
+}
+.containter .video-listed .vid .title {
+    color: rgb(180, 79, 79);
+    font-size: 17px;
+    
+}
+@media (max-width:991px) {
+    .containter {
+        padding: 10px;
+        grid-template-columns: 1.5fr 1fr;   
+        width: 100%;
+    }   
+} 
+
+ @media (max-width:768px) {
+    .containter {
+        grid-template-columns: 1fr;   
+        width: 100%;
+    }   
+}
+
+/* the supporters */
+
+.testimonials {
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+  }
+  .testimonials-col {
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px; 
+    cursor: pointer;
+   display: flex;
+  }
+  .testimonials-col img {
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+  }
+  .testimonials-col p {
+    padding: 0;
+  }
+  .testimonials-col h3 {
+    margin-top: 15px;
+    text-align: left;
+  }
+  .testimonials-col .fa {
+    color: #f44336;
+  }
+  @media (max-width: 700px) {
+    .testimonials-col img {
+       margin-left: 0px;
+       margin-right: 15px;
+     }
+  }
+  
+ /* the course
+  */
+
+p {
+    color: black;
+    font-size: 19px;
+    font-weight: 300px;
+    line-height: 22px;
+    /* padding: 10px; */
+    text-align: left;
+    line-height: 2rem;
+}
+.row {
+    /* margin-top: 5%; */
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    text-align: justify;
+}
+.course-col {
+    flex-basis: 100%;
+    /* background: #fff3f3; */
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 10px 12px;
+    box-sizing: border-box;
+    /* text-align: center; */
+}
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.course-col:hover {
+    /* box-shadow: 0 0 10px 0px rgba(14, 13, 13, 0.2); */
+    border: 1px solid #f44336;
+    transition: 2s;
+  padding:1rem;
+}
+@media (max-width:700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+h2 {
+    text-align: center;
+    font-weight:  400;
+    text-decoration: none;
+    }
+.summary {
+    padding: 5rem;
+    text-align: justify;
+    margin-top: -50PX;
+}
+
+video {
+
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    width: 100%;
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+.footer {
+    background-color: rebeccapurple;
+    padding: 2rem;
+    display: block;
+    display: flex;
+    color: white;
+    text-align: center;
+    margin-left: 80px;
+
+}
+.video-info {
+  padding: 2rem;
+ text-align: left;
+}
+
+ul {
+ 
+}
+li {
+    text-decoration: none;
+    /* display: flex; */
+    text-align: center;  
+
+}
+.foot
+ {
+    text-align: center;
+   width: 100%;
+   background-color: #f44336;
+   /* display: flex; */
+   padding: 2rem;
+   color: white;
+ }
+ .main-footer {
+    display: flex;
+    text-align: center;
+ }
+
+ .fa {
+    color:#f44336;
+    padding: 2rem;
+ }
+ .contact-us {
+    background-color: #f44336;
+    color: white;
+    margin-bottom: -10px;
+    padding: 0.5rem;
+ }
+ .sdg {
+    background-color: #f44336;
+    color: #fff;
+    margin: 20px 0;
+ }
+  /* the courses */
+/* the supporters */
